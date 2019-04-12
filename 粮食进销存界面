@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script>
+        //window.onload;
+
+
+        function check() {
+            var username = document.getElementById("username");
+            var password = document.getElementById("password");
+            if(username.value=="") {
+                alert("没有输入用户名！");
+               /* return false;*/
+            } else if(password.value=="") {
+                alert("没有输入密码！");
+                /*return false;*/
+            } else {
+                alert("提交成功！");
+                /*return true;*/
+            }
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <p class="title">粮食进销存统计系统<p>
+    <form>
+        <div class="denglu">
+            <div id="title1">请输入用户名密码登陆系统</div>
+            <input id="username" type="text" placeholder="用户名">
+            <br />
+            <input id="password" type="password" placeholder="密码" value="">
+            <div id="divid"><input type="checkbox" id="submit">记住用户名<button id="button" type="button" onclick="check()">登陆系统</button></div>
+        <div/>
+    </form>
+</body>
+</html
