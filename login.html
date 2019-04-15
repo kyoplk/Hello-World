@@ -1,0 +1,31 @@
+<HTML>
+<head>
+    <script language="JavaScript" type="text/JavaScript">
+        <!--
+        function check(form){
+//检查姓名是否填写
+            var username = form.username.value;
+            if(username.length==0){
+                alert("请填写用户名！");
+                form.username.focus();
+                return false;
+            }
+            var password = form.password.value;
+            if(password.length==0){
+                alert("请填写密码！");
+                form.password.focus();
+                return false;
+            }
+        }
+        //-->
+    </script>
+</head>
+<body>
+<form name="login" method="post" action="do_login.jsp" onSubmit="return check(this);">
+    用户： <input class="login-input" type="text" name="username"><br />
+    密码： <input class="login-input" type="password" name="password"><br />
+    <input type="submit" value="确认" style="margin-top:8px">
+    <input type="reset" value="取消">
+</form>
+</body>
+</HTML>
